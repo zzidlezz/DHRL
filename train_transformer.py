@@ -159,7 +159,7 @@ if __name__ == '__main__':
 
     ## Net basic params
     parser.add_argument('--model', type=str, default='DHRL')
-    parser.add_argument('--epochs', type=int, default=20, help='Number of student epochs to train.')
+    parser.add_argument('--epochs', type=int, default=10, help='Number of student epochs to train.')
     parser.add_argument('--nbit', type=int, default=128)
     parser.add_argument('--lr', type=float, default=0.001)
     parser.add_argument('--dropout', type=float, default=0.5, help='')
@@ -171,7 +171,7 @@ if __name__ == '__main__':
     parser.add_argument('--num_layer', type=int, default=2, help='"num_layer" in Transformer.')
     parser.add_argument('--trans_act', type=str, default='gelu', help='"activation" in Transformer.')
 
-    ## Data params       MIR 80      WIKI 60    nus100
+   
     parser.add_argument('--dataset', type=str, default='flickr', help='coco/nuswide/flickr')
     parser.add_argument('--classes', type=int, default=24)
     parser.add_argument('--image_dim', type=int, default=4096)
